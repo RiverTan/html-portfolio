@@ -1,0 +1,806 @@
+
+
+/* Table Values: https://css-tricks.com/almanac/properties/d/display/ */
+
+/*========== Start Basic Style ==========*/
+
+@font-face {
+  font-family: "SanFranciscoRegular";
+  src: url('fonts/sanfranciscodisplay-regular-webfont.woff');
+  }
+
+@font-face {
+  font-family: "SanFranciscoBold";
+  src: url('fonts/sanfranciscodisplay-bold-webfont.woff');
+  }
+
+
+::selection {
+  background: #21A3C1; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #21A3C1; /* Gecko Browsers */
+}
+body {
+  color: #171717;
+  font-family: "SanFranciscoRegular", sans-serif;
+  overflow-x: hidden;
+  min-width: 320px;
+  font-size: 1rem;
+}
+
+h1{
+  font-family: "SanFranciscoBold", sans-serif;
+  letter-spacing: -0.125rem;
+  font-size: 4.5rem;
+  line-height: 100%;
+  color: #fff;
+}
+h2{
+  font-size: 2rem;
+  font-family: "SanFranciscoBold", sans-serif;
+}
+.brand-h2{
+	font-size: 2.5rem;
+  font-family: "SanFranciscoBold", sans-serif;
+  letter-spacing: 0rem;
+}
+h3{
+  font-size: 1rem;
+  font-family: "SanFranciscoBold", sans-serif;
+}
+h4{
+  font-size: 3rem;
+  color: #fff;
+}
+h5{
+  font-size: 1rem;
+}
+
+h6{
+  font-size: 1.5rem;
+  font-family: "SanFranciscoBold", sans-serif;
+  letter-spacing: -0.01rem;
+
+}
+/*========== End Basic Style ==========*/
+/*========== Start Preloader ==========*/
+.loader-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #171717;
+    z-index: 9999;
+}
+
+.loader {
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 9999;
+}
+/*========== End Preloader ==========*/
+/*========== Start Nav Style ==========*/
+
+.row{
+  max-width: 1140px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,0.6);
+    text-align: right;
+    margin-right: 16px;
+}
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+.navbar {
+  opacity: 1;
+  background-color: #171717;
+  box-shadow: 0 1px 6px 4px rgba(0,0,0,.08)!important;
+  padding: .4rem 1rem;
+  transition:all .3s;
+}
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,0.6);
+    border-color: rgba(255,255,255,0);
+}
+
+.navbar-toggler {
+    padding: 0rem .75rem;
+    margin-top: 0.25rem;
+    font-size: 1rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.navbar-dark .navbar-toggler.active, .navbar-dark .navbar-toggler.focus{
+  text-decoration: none;
+}
+
+button:focus,button:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+.flag{
+  width: 16px;
+  margin-bottom: 2px;
+}
+.china{
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+}
+
+.navbar-collapse {
+  margin: 0;
+  border: 0;
+}
+/*========== End Nav Style ==========*/
+/*========== Start Home Style ==========*/
+.logo{
+  margin: 0;
+  padding: 0;
+  margin-left: 14px;
+}
+
+.logo img{
+  margin-bottom: 7px;
+  width:70px;
+  transition:all .3s;
+}
+
+.view-text{
+  font-size: 1rem;
+  font-family: "SanFranciscoBold", sans-serif;
+  letter-spacing: 0.005rem;
+  text-transform: uppercase;
+}
+
+.home-img {
+  /* background-image: url(img/bg_dark.png); */
+  background-color: #171717;
+  /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 98%, 50% 100%, 0 98%);
+  clip-path: polygon(0 0, 100% 0, 100% 98%, 50% 100%, 0 98%); */
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  height: 100vh;
+  min-height: 360px;
+  width: 100%;
+  z-index: -1;
+  transition: all .25s ease-in-out;
+}
+
+.home {
+  height: 100vh;
+  min-height: 360px;
+  /* background-color: #171717; */
+}
+
+.home-table {
+  display: table;
+  position: relative;
+  height: 90%;
+  width: 100%;
+}
+
+.home-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.home-btn a {
+  text-transform: none;
+  letter-spacing: -0.05rem;
+}
+
+.home-btn .btn {
+  border-radius: .5rem;
+}
+
+.home-btn .btn-outline-primary {
+  color:  rgba(255,255,255,.5);
+  border: 0.16rem solid;
+  border-color: rgba(255,255,255,.5);
+  transition: all .1s ease-in-out;
+}
+
+.home-btn .btn-outline-primary:hover {
+  color: #171717;
+  background-color: #fff;
+  transition: all .1s ease-in-out;
+}
+
+.home-btn .btn-outline-primary:focus {
+  box-shadow: none !important;
+}
+
+.home-btn .btn-outline-primary:active {
+  color: #fff !important;
+  background-color: #171717 !important;
+  border-color: transparent !important;
+  /* transition: all .25s ease-in-out; */
+}
+
+/*========== End Home Style ==========*/
+/*========== Start work ==========*/
+.portfolio_filter ul{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    color: #ebebeb;
+    /* border-bottom: 3px solid; */
+    width: auto;
+}
+.portfolio_filter ul li{
+  margin: 5px 0;
+  padding: 0;
+  display: inline-block;
+  color: #171717;
+  /* padding: 5px 0; */
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: -3px;
+  cursor: pointer;
+  list-style: none;
+  /* text-transform: uppercase; */
+  font-family: "SanFranciscoBold", sans-serif;
+  letter-spacing: 0.005rem;
+}
+.select-cat{
+    margin: 0;
+    padding: 0;
+    color:#21A3C1 !important;
+    border-bottom: 3px solid;
+    list-style: none;
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    font-family: "SanFranciscoBold", sans-serif;
+    background: transparent;
+}
+
+.work{
+  padding-top: 100px;
+  text-align: center;
+  letter-spacing: -0.25rem;
+}
+
+.about-text h5{
+  line-height: 1.4rem;
+}
+.img-card img {
+  border-radius:10px;
+}
+.img-card {
+  display:block;
+  border-radius:10px;
+  box-shadow:0 2px 5px rgba(0,0,0,.15);
+  transition:all .25s;
+}
+.img-card:hover {
+  transform:scale(1.03,1.03);
+  box-shadow:0 30px 90px rgba(0,0,0,.15);
+}
+.container-fluid {
+  /* max-width:1600px; */
+}
+/*========== End work ==========*/
+/*========== Start About ==========*/
+.about{
+  padding-top: 100px;
+  /* text-align: center; */
+  letter-spacing: -0.25rem;
+}
+/* .about-child{
+  padding-bottom: 100px;
+} */
+
+.river{
+  width: 100%;
+  /* border: 3px solid #fff; */
+  border-radius: 100%;
+  transition:all .3s;
+}
+.bg-about{
+  background-color: #F3F5F6;
+}
+/*========== End About ==========*/
+/*========== Start timeline ==========*/
+.timeline {
+  line-height: 1.4em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/*----- TIMELINE ITEM -----*/
+.timeline-item {
+  padding-left: 40px;
+  position: relative;
+}
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+/*----- TIMELINE INFO -----*/
+.timeline-info {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 0 0 .5em 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/*----- TIMELINE MARKER -----*/
+.timeline-marker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15px;
+}
+.timeline-marker:before {
+  /* background: #21A3C1; */
+  border: 3px solid #21A3C1;
+  border-radius: 100%;
+  content: "";
+  display: block;
+  height: 15px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 15px;
+  transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+.timeline-marker:after {
+  content: "";
+  width: 3px;
+  background: #ebebeb;
+  display: block;
+  position: absolute;
+  top: 24px;
+  bottom: 0;
+  left: 6px;
+}
+.timeline-item:last-child .timeline-marker:after {
+  content: none;
+}
+
+.timeline-item:not(.period):hover .timeline-marker:before {
+  background: #21A3C1;
+  border: 3px solid #21A3C1;
+}
+/*----- TIMELINE CONTENT -----*/
+.timeline-content {
+  padding-bottom: 40px;
+}
+.timeline-content p:last-child {
+  margin-bottom: 0;
+}
+/*----- TIMELINE PERIOD -----*/
+.period {
+  padding: 0;
+}
+.period .timeline-info {
+  display: none;
+}
+.period .timeline-marker:before {
+  background: transparent;
+  content: "";
+  width: 15px;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  top: 0;
+  bottom: 30px;
+  position: absolute;
+  border-top: 3px solid #ebebeb;
+  border-bottom: 3px solid #ebebeb;
+}
+.period .timeline-marker:after {
+  content: "";
+  height: 32px;
+  top: auto;
+}
+.period .timeline-content {
+  padding: 40px 0 70px;
+}
+.period .timeline-title {
+  margin: 0;
+}
+/*----------------------------------------------
+    MOD: TIMELINE SPLIT
+----------------------------------------------*/
+@media (min-width: 768px) {
+  .timeline-split .timeline, .timeline-centered .timeline {
+    display: table;
+  }
+  .timeline-split .timeline-item, .timeline-centered .timeline-item {
+    display: table-row;
+    padding: 0;
+  }
+  .timeline-split .timeline-info, .timeline-centered .timeline-info,
+  .timeline-split .timeline-marker,
+  .timeline-centered .timeline-marker,
+  .timeline-split .timeline-content,
+  .timeline-centered .timeline-content,
+  .timeline-split .period .timeline-info,
+  .timeline-centered .period .timeline-info {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .timeline-split .timeline-marker, .timeline-centered .timeline-marker {
+    position: relative;
+  }
+  .timeline-split .timeline-content, .timeline-centered .timeline-content {
+    padding-left: 30px;
+  }
+  .timeline-split .timeline-info, .timeline-centered .timeline-info {
+    padding-right: 30px;
+  }
+  .timeline-split .period .timeline-title, .timeline-centered .period .timeline-title {
+    position: relative;
+    left: -45px;
+  }
+}
+
+/*========== End timeline ==========*/
+/*========== Start scroll top ==========*/
+#back-to-top {
+  display: block;
+  z-index: 100;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  font-size: 12px;
+  position: fixed;
+  bottom: -40px;
+  right: 20px;
+  line-height: 35px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  margin: 0;
+}
+  #back-to-top i {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  #back-to-top a {
+    display: block;
+    color: #fff;
+  }
+  #back-to-top.show {
+    bottom: 24px;
+  }
+  #back-to-top:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 24px;
+  }
+  #back-to-top:hover i {
+    color: #fff;
+  }
+/*========== End scroll top ==========*/
+/*========== Start Footer Style ==========*/
+.footer-bottom {
+  padding: 24px 0;
+  border-top: 1px solid #e6ebed;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  line-height: 32px;
+}
+.copyright a {
+    color: #bababa;
+}
+.copyright a:hover {
+    color: #171717;
+    text-decoration: none;
+}
+.footer-text{
+  font-size: 0.8rem;
+  display:inline;
+  /* margin-bottom: 5px; */
+  /* padding-bottom: 5px; */
+}
+/*-------------------------------------------------------*/
+/* Social Icons
+/*-------------------------------------------------------*/
+.socials{
+  margin: 0;
+  /* text-align: right; */
+}
+.socials a {
+  display: inline-block;
+  /* width: 100%; */
+  /* height: auto; */
+  line-height: 32px;
+  /* background-color: #f7f9fa; */
+  /* color: #9A9A9A; */
+  border-radius: 3px;
+  text-align: center;
+  /* overflow: hidden; */
+  /* font-size: 14px; */
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.socials a:hover {
+    color: #fff;
+}
+.wechat:hover {
+    position: relative;
+}
+.wechat:hover:after {
+    content: url(img/wechat.png);
+    display: block;
+    position: absolute;
+    left: -14px; /* change this value to one that suits you */
+    top: -115px; /* change this value to one that suits you */
+}
+
+.socials--nobase a {
+  /* width: 13px; */
+  height: auto;
+  margin-left: 13px;
+  color: #bababa;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.socials--nobase a:hover {
+    /* color: #f36b21; */
+    background-color: transparent !important;
+    text-decoration: none;
+
+  }
+
+
+.socials--nobase .gmail:hover {
+  color: #F14336;
+}
+
+.socials--nobase .wechat:hover {
+  color: #2DC101;
+}
+
+.socials--nobase .behance:hover {
+  color: #0056FF;
+}
+
+.socials--nobase .linkedin:hover {
+  color: #007BB5;
+}
+
+.socials--nobase .vimeo:hover {
+  color: #1AB7EA;
+}
+/*========== End Footer Style ==========*/
+/*========== Start download Style ==========*/
+/* https://codepen.io/nw/pen/udkIB */
+.buttonDownload {
+	display: inline-block;
+	position: relative;
+	padding: 0 15px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+	/* background-color: #21A3C1 transparent; */
+	color: #171717;
+	text-align: center;
+	text-indent: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 0.16rem solid #21A3C1;
+  font-size: 1rem;
+  font-family: "SanFranciscoBold", sans-serif;
+  letter-spacing: 0.005rem;
+  text-transform: uppercase;
+}
+
+.buttonDownload:hover {
+	background-color: #21A3C1;
+	color: white;
+  text-decoration: none;
+  transition: all .1s ease-in-out;
+
+}
+
+.buttonDownload:before, .buttonDownload:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 12px;
+	top: 55%;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+	width: 14px;
+	height: 2px;
+	border-style: solid;
+	border-width: 0 2px 2px;
+  color: #21A3C1;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+	width: 0;
+	height: 0;
+	margin-left: 3px;
+	margin-top: -7px;
+  color: #21A3C1;
+	border-style: solid;
+	border-width: 4px 4px 0 4px;
+	border-color: transparent;
+	border-top-color: inherit;
+	-webkit-animation: downloadArrow 1s linear infinite;
+	        animation: downloadArrow 1s linear infinite;
+	-webkit-animation-play-state: paused;
+	        animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+	border-color: #fff;
+}
+
+.buttonDownload:hover:after {
+	border-top-color: #fff;
+	-webkit-animation-play-state: running;
+	        animation-play-state: running;
+}
+
+/* keyframes for the download icon anim */
+@-webkit-keyframes downloadArrow {
+	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+	0% {
+		margin-top: -7px;
+		opacity: 1;
+	}
+
+	0.001% {
+		margin-top: -15px;
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		margin-top: 0;
+		opacity: 1;
+	}
+}
+@keyframes downloadArrow {
+	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+	0% {
+		margin-top: -7px;
+		opacity: 1;
+	}
+
+	0.001% {
+		margin-top: -15px;
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		margin-top: 0;
+		opacity: 1;
+	}
+}
+/*========== End download Style ==========*/
+
+/*========== Start Responsive Style ==========*/
+@media (max-width:1140px) {
+
+}
+
+@media (max-width:992px){
+  .home-img{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 98.3%, 50% 100%, 0 98.3%);
+            clip-path: polygon(0 0, 100% 0, 100% 98.3%, 50% 100%, 0 98.3%);
+  }
+  .river{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .home-img{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 98.6%, 50% 100%, 0 98.6%);
+            clip-path: polygon(0 0, 100% 0, 100% 98.6%, 50% 100%, 0 98.6%);
+  }
+  .river{
+    width: 30%;
+  }
+}
+
+@media (max-width: 576px) {
+  body,
+  h3,
+  h5{
+    font-size: 0.9rem;
+  }
+  .home-img{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 99%, 50% 100%, 0 99%);
+            clip-path: polygon(0 0, 100% 0, 100% 99%, 50% 100%, 0 99%);
+  }
+  .river{
+    width: 40%;
+  }
+
+  h1{
+    letter-spacing: 0.025rem;
+    font-size: 2.5rem;
+  }
+  h4{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 1.2rem;
+  }
+  .brand-h2{
+    font-size: 1.5rem;
+  }
+  .flag{
+    width: 14px;
+    margin-bottom:2px;
+  }
+  .china{
+    font-size: 0.8rem;
+    margin-bottom:3px;
+  }
+
+  .home-btn a {
+    letter-spacing: 0rem;
+  }
+
+  .view-text{
+    font-size: 1rem;
+    font-family: "SanFranciscoBold", sans-serif;
+    letter-spacing: 0.005rem;
+    text-transform: uppercase;
+  }
+
+  .logo img{
+    margin-bottom: 7px;
+    width:70px;
+    transition:all .3s;
+  }
+  .work,
+  .about{
+    padding-top: 60px;
+  }
+  #back-to-top{
+    display: none;
+  }
+
+}
+
+/*========== End Responsive Style ==========*/

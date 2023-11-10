@@ -1,0 +1,231 @@
+/* CSS Percentage Circle
+http://circle.firchow.net */
+
+/* Tabs css from pitaya
+https://codepen.io/flkt-crnpio/pen/WxROwy */
+/*========== Start Basic Style ==========*/
+::selection {
+  background: #EBEBEB; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #EBEBEB; /* Gecko Browsers */
+}
+.fixed-top{
+  position: absolute;
+}
+.navbar{
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.00) 0px 1px 6px 4px !important;
+}
+a{
+	text-decoration: none;
+	color: #171717;
+}
+a:hover{
+	text-decoration: none;
+	color: #EBEBEB;
+	transition:all .2s;
+}
+.pure-img{
+	width: 100%;
+}
+.pure-img-small{
+  width: 80%;
+}
+.logo-img{
+  width: 50%;
+}
+.words{
+  width: 40%;
+}
+/*========== End Basic Style ==========*/
+/*========== Start Home Style ==========*/
+.home-img {
+  background-image: url(img/river-hero-image.jpg);
+	background-color: #171717;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  /* height: 100vh; */
+  min-height: 360px;
+  width: 100vw;
+  z-index: -1; }
+
+.home {
+  height: 100vh;
+  min-height: 360px;
+}
+
+.home-table {
+  display: table;
+  position: relative;
+  height: 95%;
+  width: 100%; }
+
+.home-table-cell {
+  display: table-cell;
+  vertical-align: middle; }
+
+
+
+.portrait h4{
+  font-size: 2rem;
+  color: #fff;
+	letter-spacing: 0.1rem;
+}
+
+.brand-image{
+  width: 30vw;
+	min-width: 280px;
+}
+/*========== End Home Style ==========*/
+/*========== Start Intro Style ==========*/
+.intro-border h2:after{
+  content: "";
+  display: block;
+  width: 10%;
+  padding-top: 10px;
+  border-bottom: 4px solid #171717;
+}
+
+.intro-text{
+  color: #BEBEBE;
+}
+
+.solution-text:after{
+  content: "";
+  display: block;
+  width: 10%;
+  float: right;
+  margin-top: 60px;
+  border-bottom: 4px solid #171717;
+}
+/*========== End Intro Style ==========*/
+
+
+
+
+
+
+/*========== Start UI Style ==========*/
+.ui {
+	position:relative;
+	/* padding:20px; */
+	/* border-radius:10px; */
+	opacity:1;
+	transition: opacity 0.5s;
+}
+.swiper-slide {
+  cursor:-webkit-grab;
+	cursor:grab;
+}
+.swiper-slide-active {
+	opacity:1;
+}
+.ui-one {
+	overflow:hidden;
+  cursor:-webkit-grab;
+	cursor:grab;
+}
+
+.ui-one .swiper-pagination,
+.carousel  .swiper-pagination {
+	position:relative;
+	bottom:auto;
+	margin-top:30px;
+}
+/*
+.swiper-pagination-bullet{
+  background: #171717;
+  opacity: 1;
+} */
+.swiper-pagination-bullet-active{
+  background: #171717;
+}
+.ui-card img{
+	 border: none;
+	 /* border-radius:16px; */
+	 box-shadow:0 2px 15px rgba(0,0,0,.1);
+	 transition:all .25s;
+}
+.ui-card:hover{
+	/* transform:scale(.99,.99); */
+	/* box-shadow:0 2px 5px rgba(0,0,0,.0); */
+}
+.container-fluid{
+	margin: 0;
+	padding: 0;
+}
+/*========== End UI Style ==========*/
+.pure-img{
+  width: 100%;
+}
+
+/*========== Start Mockup1 Style ==========*/
+.mockup1-img {
+  /* background-color:#F6F6F6; */
+  background-image: url(img/mockup-halo.jpg);
+  background-position: center;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  height: 65vh;
+  /* min-height: 360px; */
+  z-index: -1;
+}
+
+/*========== End Mockup1 Style ==========*/
+
+/*========== Start more work Style ==========*/
+.img-card:hover {
+  transform:scale(1,1);
+	box-shadow:0 2px 5px rgba(0,0,0,.15);
+}
+/*========== End more work Style ==========*/
+/*========== Start Responsive Style ==========*/
+@media (max-width:992px){
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+	body{
+		font-size: 0.9rem;
+	}
+	h2{
+		font-size: 1.2rem;
+	}
+  .home-table {
+    display: table;
+    position: relative;
+    height: 90%;
+    width: 100%;
+  }
+
+  .logo-img{
+    width: 70%;
+  }
+  .pure-img-small{
+    width: 100%;
+  }
+	.brand-h2{
+		font-size: 2rem;
+	}
+	h3,
+	h5{
+		font-size: 0.9rem;
+	}
+	.portrait h4{
+	  font-size: 1.5rem;
+	  color: #fff;
+	}
+
+}
+/*========== End Responsive Style ==========*/

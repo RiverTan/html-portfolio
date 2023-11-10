@@ -1,0 +1,16 @@
+
+/*========== bootstrap ==========*/
+@import url('bootstrap.min.css');
+
+/*========== fontawesome ==========*/
+@import url('fontawesome.min.css');
+@import url('regular.min.css');
+@import url('solid.min.css');
+
+/*========== animate css ==========*/
+@import url('animate.min.css');
+
+/*========== magnific-popup ==========*/
+@import url('magnific-popup.css');
+@import url('hamburgers.min.css');
+@import url('boomerang.min.css');

@@ -1,0 +1,592 @@
+/* CSS Percentage Circle
+http://circle.firchow.net */
+
+/* Tabs css from pitaya
+https://codepen.io/flkt-crnpio/pen/WxROwy */
+/*========== Start Basic Style ==========*/
+::selection {
+  background: #21A3C1; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #21A3C1; /* Gecko Browsers */
+}
+.fixed-top{
+  position: absolute;
+}
+.navbar{
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.00) 0px 1px 6px 4px !important;
+}
+a{
+	text-decoration: none;
+	color: #171717;
+}
+a:hover{
+	text-decoration: none;
+	color: #21A3C1;
+	transition:all .2s;
+}
+/*========== End Basic Style ==========*/
+/*========== Start Home Style ==========*/
+.velite h1{
+  font-family: "SanFranciscoBold";
+  font-size: 3rem;
+  line-height: 100%;
+  color: #fff;
+	letter-spacing: 0.1rem;
+}
+
+.velite h4{
+  font-size: 1.5rem;
+  color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+}
+
+.home-img {
+  background-image: url(img/velite-hero-image.jpg);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  /* height: 100vh; */
+  min-height: 360px;
+  width: 100vw;
+  z-index: -1;
+}
+
+.home {
+  height: 100vh;
+  min-height: 360px;
+}
+
+.home-table {
+  display: table;
+  position: relative;
+  height: 70%;
+  width: 100%;
+}
+
+.home-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*========== End Home Style ==========*/
+/*========== Start Intro Style ==========*/
+.intro-border h2:after{
+  content: "";
+  display: block;
+  width: 10%;
+  padding-top: 6px;
+  border-bottom: 4px solid #171717;
+}
+
+.intro-text{
+  color: #BEBEBE;
+}
+
+.solution-text:after{
+  content: "";
+  display: block;
+  width: 10%;
+  float: right;
+  margin-top: 80px;
+  border-bottom: 4px solid #171717;
+}
+/*========== End Intro Style ==========*/
+/*========== Start Research 1 Style ==========*/
+.my-research {
+  width:100%;
+  height:6px;
+  margin:30px auto 15px;
+  /* background-color:rgba(0,0,0,.1); */
+  background-color:#EBEBEB;
+  border-radius:10px;
+  position:relative;
+}
+
+.research-bar {
+  height:6px;
+  border-radius:6px;
+  position:absolute;
+  top:0;
+  left:0;
+  background: #21A3C1;
+}
+
+.research-label {
+  position:absolute;
+  bottom:100%;
+  width:100%;
+  /* font-size:12px; */
+  font-family: "SanFranciscoBold";
+}
+
+.percentage {
+  float:right;
+}
+
+.research-bar[data-width = '55'] { width: 55%; }
+.research-bar[data-width = '90'] { width: 90%; }
+.research-bar[data-width = '65'] { width: 65%; }
+.research-bar[data-width = '46'] { width: 46%; }
+.research-bar[data-width = '40'] { width: 40%; }
+.research-bar[data-width = '30'] { width: 30%; }
+
+/*========== End Research 1 Style ==========*/
+/*========== Start Vision Style ==========*/
+.vision-img {
+  /* background-color:rgba(0,0,0,.5); */
+  background-image: url(img/bg_velite_vision.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  min-height: 360px;
+  z-index: -1;
+}
+
+.vision-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    /* width: 100%; */
+    transform: translate(-50%, -50%);
+}
+/*========== End Vision Style ==========*/
+ /*========== Start how it works, target market Style ==========*/
+ .card-img-top{
+   width: 120px;
+   height: auto;
+ }
+ .custom-card{
+    border: none;
+    border-radius:16px;
+    box-shadow:0 2px 15px rgba(0,0,0,.1);
+    transition:all .25s;
+ }
+ .custom-card:hover{
+   transform:scale(1.01,1.01);
+   box-shadow:0 20px 90px rgba(0,0,0,.15);
+ }
+ /*========== End how it works, target market Style ==========*/
+
+ /*========== Start Persona Style ==========*/
+.persona {
+	position:relative;
+	/* padding:20px; */
+	border-radius:16px;
+	opacity:1;
+	transition: opacity .3s;
+}
+.swiper-slide {
+  cursor:-webkit-grab;
+	cursor:grab;
+}
+.swiper-slide-active {
+	opacity:1;
+}
+.persona-one {
+	overflow:hidden;
+  cursor:-webkit-grab;
+	cursor:grab;
+}
+
+.persona-one .swiper-pagination,
+.carousel  .swiper-pagination {
+	position:relative;
+	bottom:auto;
+	margin-top:30px;
+}
+/*
+.swiper-pagination-bullet{
+  background: #171717;
+  opacity: 1;
+} */
+.swiper-pagination-bullet-active{
+  background: #171717;
+}
+
+.persona-card img{
+	 border: none;
+	 border-radius:10px;
+	 box-shadow:0 2px 15px rgba(0,0,0,.1);
+	 transition:all .25s;
+}
+.persona-card:hover{
+	/* transform:scale(.99,.99); */
+	/* box-shadow:0 2px 5px rgba(0,0,0,.0); */
+}
+
+/*========== End Persona Style ==========*/
+/*========== Start IA Map, wireframe Style ==========*/
+.ia-map,
+.wireframe{
+  width: 100%;
+  height: auto;
+}
+/*========== End IA Map, wireframe Style ==========*/
+
+/*========== Start User Flow Style ==========*/
+
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.tabs {
+  display: block;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  overflow: hidden;
+}
+
+.tabs [class^="tab"] label,
+.tabs [class*=" tab"] label {
+    color: #171717;
+    cursor: pointer;
+    display: block;
+    /* font-size: 1.2em; */
+    /* line-height: 1em; */
+    /* padding: 1rem 0; */
+    text-align: center;
+  }
+
+.tabs [class^="tab"] [type="radio"],
+.tabs [class*=" tab"] [type="radio"] {
+    /* border-bottom: 1px solid rgba(239, 237, 239, 0.5); */
+    border-bottom: 2px solid #EBEBEB;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+/* .tabs [class^="tab"] [type="radio"]:hover, .tabs [class^="tab"] [type="radio"]:focus,
+.tabs [class*=" tab"] [type="radio"]:hover,
+.tabs [class*=" tab"] [type="radio"]:focus {
+      border-bottom: 2px solid #21A3C1;
+} */
+
+.tabs [class^="tab"] [type="radio"]:checked,
+.tabs [class*=" tab"] [type="radio"]:checked {
+      border-bottom: 2px solid #21A3C1;
+}
+
+.tabs [class^="tab"] [type="radio"]:checked + div,
+.tabs [class*=" tab"] [type="radio"]:checked + div {
+      opacity: 1;
+}
+
+.tabs [class^="tab"] [type="radio"] + div,
+.tabs [class*=" tab"] [type="radio"] + div {
+      display: block;
+      opacity: 0;
+      padding: 2rem 0;
+      width: 90%;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+}
+
+.tabs .tab-2 {
+    width: 33.33333%;
+}
+
+.tabs .tab-2 [type="radio"] + div {
+      width: 300%;
+      margin-left: 300%;
+}
+
+.tabs .tab-2 [type="radio"]:checked + div {
+      margin-left: 0;
+}
+
+.tabs .tab-2:last-child [type="radio"] + div {
+      margin-left: 200%;
+}
+
+.tabs .tab-2:last-child [type="radio"]:checked + div {
+      margin-left: -200%;
+}
+/* custom */
+.tabs .tab-middle [type="radio"] + div {
+      margin-left: 100%;
+}
+
+.tabs .tab-middle [type="radio"]:checked + div {
+      margin-left: -100%;
+}
+.case-avatar{
+  width: 30%;
+}
+
+.case-image{
+  width: 100%;
+}
+
+/*========== End User Flow Style ==========*/
+/*========== Start UI Style ==========*/
+.ui {
+	position:relative;
+	/* padding:20px; */
+	/* border-radius:10px; */
+	opacity:1;
+	transition: opacity 0.5s;
+}
+.swiper-slide {
+  cursor:-webkit-grab;
+	cursor:grab;
+}
+.swiper-slide-active {
+	opacity:1;
+}
+.ui-one {
+	overflow:hidden;
+  cursor:-webkit-grab;
+	cursor:grab;
+}
+
+.ui-one .swiper-pagination,
+.carousel  .swiper-pagination {
+	position:relative;
+	bottom:auto;
+	margin-top:30px;
+}
+/*
+.swiper-pagination-bullet{
+  background: #171717;
+  opacity: 1;
+} */
+.swiper-pagination-bullet-active{
+  background: #171717;
+}
+
+.ui-card img{
+	 border: none;
+	 /* border-radius:16px; */
+	 box-shadow:0 2px 15px rgba(0,0,0,.1);
+	 transition:all .25s;
+}
+.ui-card:hover{
+	/* transform:scale(.99,.99); */
+	/* box-shadow:0 2px 5px rgba(0,0,0,.0); */
+}
+
+.container-fluid{
+	margin: 0;
+	padding: 0;
+}
+/*========== End UI Style ==========*/
+/*========== Start smartphone app Style ==========*/
+.pure-img{
+  width: 100%;
+}
+.smartphone-border h2:after{
+	margin: 0 auto;
+  content: "";
+  display: block;
+  width: 15%;
+  padding-top: 10px;
+  border-bottom: 4px solid #171717;
+}
+/*========== End smartphone app Style ==========*/
+/*========== Start Branding Style ==========*/
+.branding-img {
+  background-color:#21A3C1;
+  /* background-image: url(img/bg_branding.jpg); */
+  background-position: scroll;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  min-height: 360px;
+  z-index: -1;
+}
+
+.branding-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    /* width: 100%; */
+    transform: translate(-50%, -50%);
+}
+.branding-text img{
+	max-width: 300px;
+}
+/*========== End Branding Style ==========*/
+.logo-image{
+  width: 50%;
+}
+/*========== Start Mockup1 Style ==========*/
+.mockup1-img {
+  /* background-color:#F6F6F6; */
+  background-image: url(img/mockup-velite.jpg);
+  background-position: center;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  height: 65vh;
+  /* min-height: 360px; */
+  z-index: -1;
+}
+
+/*========== End Mockup1 Style ==========*/
+/*========== Start pdf Style ==========*/
+.last-btn a {
+  text-transform: none;
+  font-family: "SanFranciscoBold";
+	padding-top: 5px;
+	padding-bottom: 4px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.last-btn .btn {
+  border-radius: .5rem;
+}
+
+.last-btn .btn-outline-warning {
+  color:  #171717;
+  border: 0.14rem solid;
+  border-color: #171717;
+  transition: all .1s ease-in-out;
+}
+
+.last-btn .btn-outline-warning:hover {
+	color: #fff !important;
+	border-color: #21A3C1;
+  background-color: #21A3C1 !important;
+  border-color: transparent !important;
+  transition: all .1s ease-in-out;
+}
+
+.last-btn .btn-outline-warning:focus {
+	color: #fff !important;
+	border-color: #21A3C1;
+  background-color: #21A3C1 !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+	transition: all .1s ease-in-out;
+
+}
+
+.last-btn .btn-outline-warning:active {
+  color: #fff !important;
+	border-color: #21A3C1;
+  background-color: #21A3C1 !important;
+  border-color: transparent !important;
+	transition: all .1s ease-in-out;
+}
+/*========== End pdf Style ==========*/
+/*========== Start more work Style ==========*/
+.img-card:hover {
+  transform:scale(1,1);
+	box-shadow:0 2px 5px rgba(0,0,0,.15);
+}
+/*========== End more work Style ==========*/
+/*========== Start Responsive Style ==========*/
+@media (max-width:992px){
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+	.velite h1{
+		letter-spacing: 0.1rem;
+	  font-size: 1.8rem;
+	}
+
+	.velite h4{
+	  font-size: 1.1rem;
+	  color: #fff;
+		text-transform: uppercase;
+	}
+
+	.hero-img{
+	  max-height: 40vh;
+	  min-height: 200px;
+	  /* z-index: -1; */
+	}
+	.child1{
+		text-align: center;
+		margin-bottom: -25%;
+	}
+	.child2{
+		text-align: center;
+		position: relative;
+		top: 75%;
+		/* left: 50%; */
+		overflow: hidden;
+		width: 100%;
+		transform: translate(-0%, -0%);
+		margin-bottom: 20%;
+	}
+	body{
+		font-size: 0.9rem;
+	}
+	h2{
+		font-size: 1.2rem;
+	}
+	.brand-h2{
+		font-size: 2rem;
+	}
+	h3,
+	h5{
+		font-size: 0.9rem;
+	}
+	.solution-text:after{
+		content: "";
+		display: none;
+		width: 10%;
+		float: right;
+		margin-top: 110px;
+		border-bottom: 4px solid #171717;
+	}
+	.vision-img {
+	  background-attachment:inherit;
+	}
+	.branding-text img{
+		max-width: 200px;
+	}
+	.tabs [class^="tab"] [type="radio"],
+	.tabs [class*=" tab"] [type="radio"] {
+	    display: none;
+	}
+	.tab-text{
+		/* text-transform: uppercase; */
+		/* font-family: "SanFranciscoBold"; */
+	}
+	.tabs [class^="tab"] label,
+	.tabs [class*=" tab"] label {
+	    /* color: #21A3C1; */
+			border-bottom: 2px solid #EBEBEB;
+			letter-spacing: -0.025rem;
+			display: block;
+	    width: 80%;
+			margin: 0 auto;
+	  }
+}
+/*========== End Responsive Style ==========*/
