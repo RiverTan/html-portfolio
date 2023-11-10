@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <!-- library CSS -->
+    <link rel="stylesheet" type="text/css" href="css/library.css">
+    <!-- Fontawesome CSS -->
+    <script src="js/brands.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/regular.min.js"></script>
+    <script src="js/solid.min.js"></script>
+    <!-- other styles -->
+    <link rel="stylesheet" type="text/css" href="css/circle.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins-carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/ImageComparison.css">
+    <script src="js/ImageComparison.js"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', domReady);
+
+        function domReady() {
+          var imageComparisonCollection = document.querySelectorAll('.js-comparison-container');
+          for (var i = 0; i < imageComparisonCollection.length; i++) {
+            var imageWidget = imageComparisonCollection[i];
+            var images = imageWidget.querySelectorAll('.comparison-image');
+            new ImageComparison({
+              container: imageWidget,
+              startPosition: imageWidget.getAttribute('start-position'),
+              data: [
+                {
+                  image: images[0],
+                  // label: 'before'
+                },
+                {
+                  image: images[1],
+                  // label: 'after'
+                }
+              ],
+            });
+          }
+        }
+      </script>
+    <!-- custom styles -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-maserati.css">
+    <title>Maserati</title>
+  </head>
+  <body>
+  <!-- start loader -->
+  <!-- <div class="loader-wrapper">
+      <div class="loader"></div>
+  </div> -->
+  <!-- end loader -->
+  <!-- start nav -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top wow">
+    <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt="Logo"></a>
+
+    <button class="navbar-toggler hamburger hamburger-js hamburger--spring" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ml-auto">
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#"><img class="flag mr-1" src="img/flag-ch.png" alt=""><span class="china">中文</span></a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">About Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- end nav -->
+
+  <!-- start home -->
+  <section id="home" class="home">
+    <div class="home-img"></div>
+    <div class="home-table">
+      <div class="home-table-cell">
+        <div class="container-fluid">
+              <div class="mx-auto flex-column text-center velite">
+                <h4>Concept Movie</h4>
+                <h1>Maserati Regale GT</h1>
+              </div>
+      </div>
+    </div>
+  </section>
+  <!-- end home -->
+  <!-- start intro -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mt-5 mt-sm-5 intro-border">
+          <h2>Intro</h2>
+        </div>
+        <div class="col-md-6 mt-2 mt-sm-5 text">
+          This project was created in the WNM 695 Automotive UI class in Spring 2018. The client, FCA offered us two brands to choose from, the Maserati and the Alfa Romeo. Our team chose to build a sports and luxury car for Maserati. I am in charge of the rendering and animation in this team project.
+        </div>
+      </div>
+      <!-- ========= -->
+      <div class="row">
+        <div class="col-md-6 mt-4">
+          <div class="row">
+          <div class="col-6">
+            <h3>Deliverables</h3>
+            <div class="intro-text mt-3">
+              3D Model
+            </div>
+            <div class="intro-text mt-1">
+              Concept Movie
+            </div>
+          </div>
+          <div class="col-6">
+            <h3>Designer</h3>
+            <div class="intro-text mt-3">
+              River Tan
+            </div>
+            <div class="intro-text mt-1">
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4">
+          <div class="row">
+          <div class="col-6">
+            <h3>Instructor</h3>
+            <div class="intro-text mt-3">
+              Akino Tsuchiya
+            </div>
+            <div class="intro-text mt-1">
+              Claudia Dallendoerfer
+            </div>
+          </div>
+          <div class="col-6">
+            <h3>Industrial Designer</h3>
+            <div class="intro-text mt-3">
+              Andrew. S. Kang
+            </div>
+            <div class="intro-text mt-1">
+              Lewis Liu
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- ========= -->
+    </div>
+  </section>
+  <!-- end intro -->
+  <!-- start Rendering -->
+  <section class="mt-5 mt-sm-5 pt-sm-5">
+    <div class="container">
+      <h2>Rendering</h2>
+      <div class="mt-2 mt-sm-3 text">The concept car was designed by Andrew. S. Kang and 3D model made by Lewis Liu in WNM 695 class in spring 2018. Renderings and animation made by River Tan.</div>
+      <div class="row mt-3 mt-sm-3">
+      <div class="col-12">
+        <div class="js-comparison-container">
+          <img class="comparison-image" src="img/maserati/render-before.jpg" alt="">
+          <img class="comparison-image" src="img/maserati/render-after.jpg" alt="">
+        </div>
+        <img class="pure-img mt-2 mt-sm-3" src="img/maserati/Render06a.jpg" alt="">
+        <div class="row">
+          <div class="col-6 left-img">
+            <img class="pure-img mt-2 mt-sm-3" src="img/maserati/Render02a.jpg" alt="">
+          </div>
+          <div class="col-6 right-img">
+            <img class="pure-img mt-2 mt-sm-3" src="img/maserati/Render01a.jpg" alt="">
+          </div>
+        </div>
+        <!-- <img class="pure-img mt-2 mt-sm-3" src="img/maserati/car-render2.jpg" alt=""> -->
+      </div>
+      </div>
+    </div>
+  </section>
+  <!-- end Rendering -->
+  <!-- start mockup 1 -->
+  <section class="mt-5 mt-sm-5">
+    <div class="mockup1-img">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- end mockup 1 -->
+  <section class="mt-5">
+    <div class="container">
+      <div class="row">
+      <div class="col-12">
+        <img class="pure-img mt-2 mt-sm-3" src="img/maserati/Render05a.jpg" alt="">
+        <img class="pure-img mt-2 mt-sm-3" src="img/maserati/car-render4.jpg" alt="">
+      </div>
+      </div>
+    </div>
+  </section>
+  <!-- start movie -->
+  <section class="mt-5 mt-sm-5 pt-sm-5">
+    <div class="container">
+      <h2 class="text-center">Concept Movie</h2>
+      <!-- <div class="mt-2 mt-sm-3 text">The concept car was designed by Andrew. S. Kang and 3D model made by Lewis Liu in WNM 695 class in spring 2018. Renderings and animation made by River Tan.</div> -->
+      <div class="row mt-2 mt-sm-2">
+      <div class="col-12">
+        <a target="_blank" rel="noopener noreferrer" href="https://player.vimeo.com/video/284074889">
+        <img class="pure-img mt-2 mt-sm-3" src="img/maserati/car-movie.jpg" alt="">
+        </a>
+        <div class="embed-responsive embed-responsive-16by9 mt-2 mt-sm-3">
+          <iframe src="https://player.vimeo.com/video/284074889" width="1280" alt="vimeo" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <!-- end movie -->
+  <!-- start sources -->
+  <section class="mt-5">
+    <div class="container">
+      <h2 class="text-center">Sources</h2>
+      <div class="row">
+        <div class="col-md-2 mt-2">
+          <h3>FOOTAGE</h3>
+        </div>
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-6 mt-2">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/maserati">Maserati YouTube Offical Channel</a>
+            </div>
+            <div class="col-md-6 mt-2">
+              <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/9641805">BMW Concept Car: GINA</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end sources -->
+
+  <!-- start ui -->
+  <section class="mt-5">
+    <div class="container">
+    <!-- <h2 class="text-center">View More Work</h2> -->
+    </div>
+    <div class="container-fluid">
+      <div class="mt-4">
+        <!-- <div class="col-12"> -->
+          <div class="ui-one">
+            <div class="swiper-wrapper">
+
+              <div class="ui swiper-slide">
+                <div class="d-flex">
+                  <div class="img-card">
+                    <a href="velite.html">
+                    <img src="img/homepage/project1.jpg" class="img-fluid" alt="One">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ui swiper-slide">
+                <div class="d-flex">
+                  <div class="img-card">
+                    <a href="moveo.html">
+                    <img src="img/homepage/project2.jpg" class="img-fluid" alt="One">
+                    </a>
+                  </div>
+                </div>
+              </div> <!-- .swiper-slide -->
+
+              <div class="ui swiper-slide">
+                <div class="d-flex">
+                  <div class="img-card">
+                    <a href="halo.html">
+                    <img src="img/homepage/project3.jpg" class="img-fluid" alt="One">
+                    </a>
+                  </div>
+                </div>
+              </div> <!-- .swiper-slide -->
+
+              <!-- <div class="ui swiper-slide">
+                <div class="d-flex">
+                  <div class="img-card">
+                    <a href="maserati.html">
+                    <img src="img/homepage/project4.jpg" class="img-fluid" alt="One">
+                    </a>
+                  </div>
+                </div>
+              </div> -->
+
+              <div class="ui swiper-slide">
+                <div class="d-flex">
+                  <div class="img-card">
+                    <a href="talk.html">
+                    <img src="img/homepage/project5.jpg" class="img-fluid" alt="One">
+                    </a>
+                  </div>
+                </div>
+              </div> <!-- .swiper-slide -->
+
+              <div class="ui swiper-slide">
+                <div class="d-flex">
+                  <div class="img-card">
+                    <a href="type.html">
+                    <img src="img/homepage/project6.jpg" class="img-fluid" alt="One">
+                    </a>
+                  </div>
+                </div>
+              </div> <!-- .swiper-slide -->
+
+              <div class="ui swiper-slide">
+                <div class="d-flex">
+                  <div class="img-card">
+                    <a href="portrait.html">
+                    <img src="img/homepage/project7.jpg" class="img-fluid" alt="One">
+                    </a>
+                  </div>
+                </div>
+              </div> <!-- .swiper-slide -->
+              <div class="ui swiper-slide">
+                <div class="d-flex">
+                  <div class="img-card">
+                    <a href="color.html">
+                    <img src="img/homepage/project8.jpg" class="img-fluid" alt="One">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ui swiper-slide">
+                <div class="d-flex">
+                  <div class="img-card">
+                    <a href="brand-identity.html">
+                    <img src="img/homepage/project9.jpg" class="img-fluid" alt="One">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="visibility:hidden;">-</div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+
+          </div>
+        <!-- </div> -->
+      </div>
+    </div>
+
+  </section>
+  <!-- end ui -->
+  <!-- Footer -->
+      <footer class="footer mt-5">
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-lg-6 text-center text-lg-left">
+                <span class="copyright text">
+                  &copy; 2018 Made by <a href="#">River Tan</a>
+                </span>
+              </div>
+
+              <div class="col-lg-6 ">
+                <div class="socials socials--nobase footer__socials clearfix text-center text-lg-right">
+                  <a href="mailto:rivertan224@gmail.com" class="gmail"><i class="far fa-envelope mr-1"></i><div class="footer-text align-top">rivertan224@gmail.com</div></a>
+
+                  <a href="#" class="wechat"><i class="fab fa-weixin mr-1"></i><div class="footer-text align-top">evatwlw</div></a>
+
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/rivertan" class="behance"><i class="fab fa-behance"></i></a>
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rivertan/" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                  <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/rivertan" class="vimeo"><i class="fab fa-vimeo-v"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+  <!-- end footer -->
+  <!-- start back to top -->
+  <div id="back-to-top" class="">
+        <a href="#home"><i class="fas fa-angle-up"></i></a>
+  </div>
+  <!-- end back to top -->
+
+    <!-- jquery first -->
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <!-- bootstrap -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- easing -->
+      <script src="js/easing.min.js"></script>
+      <!-- wow -->
+      <script src="js/wow.min.js"></script>
+      <!-- waypoints -->
+      <script src="js/waypoints.min.js"></script>
+      <!-- conter -->
+      <script src="js/counterup.min.js"></script>
+      <!-- typed -->
+      <script src="js/typed.min.js"></script>
+      <!-- isotope -->
+      <script src="js/isotope.pkgd.min.js"></script>
+      <!-- magnific popup -->
+      <script src="js/magnific-popup.min.js"></script>
+      <!-- boomerang -->
+      <script src="js/boomerang.min.js"></script>
+      <!-- plugins -->
+      <script src="js/plugins.js"></script>
+
+      <!-- custom sripts -->
+      <script src="js/script.js"></script>
+</body>
+</html>
